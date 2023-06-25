@@ -12,6 +12,11 @@ if [ "$1" = "--logs" ]; then
             echo "Data: $(date)" >> log$i.txt
         done
     fi
+elif [ "$1" = "--help" ]; then
+    echo "    --help - wyswietlenie opcji."
+    echo "    --logs - utworzenie plików log"
+    echo "    --logs [ilosc] utworzenie danej ilosci logow"
+    echo "    --date - wyświetlenie dzisiejszej daty"
 elif [ "$1" = "--date" ]; then
     echo "Dzisiejsza data: $(date)"
 else
